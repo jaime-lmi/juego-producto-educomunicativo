@@ -1,6 +1,4 @@
-from pathlib import Path
-
-html = r'''<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -84,3 +82,4 @@ function restart(){document.getElementById('ending').classList.add('hidden');doc
 path = Path("/mnt/data/el_destino_de_la_carrilera_aventura.html")
 path.write_text(html, encoding="utf-8")
 print(f"Archivo creado: {path} ({path.stat().st_size} bytes)")
+

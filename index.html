@@ -79,7 +79,6 @@ function finish(won){document.getElementById('game').classList.add('hidden');doc
 function restart(){document.getElementById('ending').classList.add('hidden');document.getElementById('intro').classList.remove('hidden');}
 </script>
 </body></html>'''
-path = Path("/mnt/data/el_destino_de_la_carrilera_aventura.html")
 path.write_text(html, encoding="utf-8")
 print(f"Archivo creado: {path} ({path.stat().st_size} bytes)")
 
